@@ -1,4 +1,6 @@
 // mixin
+@import 'vars';
+
 @mixin angle($pseudo, $flip: false, $angle: 1.5deg) {
   // Possible values for $pseudo are: before, after, both
   @if $pseudo == 'before' or $pseudo == 'after' or $pseudo == 'both' {
@@ -112,6 +114,10 @@
 
 .-green {
   background: #5e9b42;
+}
+
+.-brown {
+  background: $text;
 }
 
 // demo code below
