@@ -1,0 +1,52 @@
+/* Structure */
+body {
+	background-color: $lt_gray; 
+}
+
+.edge--bottom--reverse {
+	background: rgba(66, 54, 43, .4);
+}
+
+.edge--top {
+	background: rgba(66, 54, 43, .4);
+}
+
+.nav {
+	display: inline-block;
+}
+
+.drop {
+	list-style-type: none;
+	background-color: #FFFFFF;
+    border-radius: 4px;
+    display: none; /* on hover displayed */
+    position: absolute;
+    min-width: 200px;
+    z-index: 999; /* moves to "top" */
+    padding-left: 0; /* removes default button margin */
+} /* settings dropdown menu! hidden first. absolute display - relative to gear */
+
+.dropdown:hover .drop {
+	display: block;
+} /* on gear hover, the dropdown is revealed */
+
+.dropdown:hover .drop li {
+    display: block;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} /* on gear hover, the dropdown li appear as such  - padding between the li lines, no decoration  */
+
+.drop ul {
+	display: inline-block;
+}
+
+.menu {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.menu li {
+	display: inline-block;
+}
+
